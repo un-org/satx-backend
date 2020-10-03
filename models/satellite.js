@@ -13,11 +13,9 @@ const satSchema = new mongoose.Schema(
             type: Number,
             required: true,
         },
-        position: {
-            type: Array,
-            required: true,
-        },
         launchDate: requiredString,
+        source: requiredString,
+        launchSite: requiredString,
     },
     {
         timestamps: true,
