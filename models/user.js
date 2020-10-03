@@ -15,6 +15,10 @@ const userSchema = new mongoose.Schema(
             index: true,
         },
         password: requiredString,
+        score: {
+            type: Number,
+            default: 0,
+        },
     },
     {
         timestamps: true,
