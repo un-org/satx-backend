@@ -1,0 +1,2 @@
+-   [ ] Create Database
+-   [ ] Fetch Satellite DATA

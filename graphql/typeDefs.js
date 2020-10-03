@@ -1,14 +1,8 @@
-import ApolloServer from "apollo-server-express";
-const { gql } = ApolloServer;
+import merge from "@graphql-tools/merge";
+const { mergeTypeDefs } = merge;
 
-const typeDefs = gql`
-    type Satellite {
-        id: ID!
-    }
-    type Query {
-        hello: String!
-        Satellites: [Satellite!]!
-    }
-`;
+import signup from "./user/types/signup.user.response.js";
 
-export default typeDefs;
+const UserTypesArray = [signup];
+
+export default mergeTypeDefs(UserTypesArray);

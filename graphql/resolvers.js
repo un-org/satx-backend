@@ -1,20 +1,8 @@
-const resolvers = {
-    Query: {
-        hello: () => "world",
-        Satellites: function () {
-            return [
-                {
-                    id: 1,
-                },
-                {
-                    id: 2,
-                },
-                {
-                    id: 3,
-                },
-            ];
-        },
-    },
-};
+import merge from "@graphql-tools/merge";
+const { mergeResolvers } = merge;
 
-export default resolvers;
+import signup from "./user/resolvers/signup.user.js";
+
+const UserResolversArray = [signup];
+
+export default mergeResolvers(UserResolversArray);
