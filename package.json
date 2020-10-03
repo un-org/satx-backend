@@ -1,0 +1,32 @@
+{
+    "name": "satelleyes-backend",
+    "version": "1.0.0",
+    "description": "Satelleyes Backend",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/un-org/satelleyes-backend.git"
+    },
+    "author": "Undefined Dev",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/un-org/satelleyes-backend/issues"
+    },
+    "homepage": "https://github.com/un-org/satelleyes-backend#readme",
+    "dependencies": {
+        "apollo-server-express": "^2.18.1",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "graphql": "^15.3.0",
+        "morgan": "^1.10.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

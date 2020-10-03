@@ -1,2 +1,2 @@
 # satelleyes-backend
-Official Satelleyes Backend
+Official Satelleyes SpaceAppChallenge Backend 
