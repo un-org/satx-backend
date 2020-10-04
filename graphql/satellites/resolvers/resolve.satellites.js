@@ -32,15 +32,18 @@ export default {
                     err: "Could not fetch API. Check API key",
                 });
             } else {
-                return {
+                const sat = new Satellite({
                     category: null,
                     satname: result.info.satname,
                     satid: result.info.satid,
                     launchDate: null,
                     source: null,
                     launchSite: null,
-                    position: result.positions,
-                };
+                });
+
+                sat.position = result.positions;
+
+                return sat;
             }
         },
 
