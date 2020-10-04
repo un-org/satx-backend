@@ -28,7 +28,8 @@
         "graphql-tools": "^6.2.4",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.10.7",
-        "morgan": "^1.10.0"
+        "morgan": "^1.10.0",
+        "node-fetch": "^2.6.1"
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
