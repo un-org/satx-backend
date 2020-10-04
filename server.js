@@ -49,7 +49,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (_, res) => {
     res.json({
-        message: "Welcome to Satelleyes' GraphQL API.",
+        message: "Welcome to SatX' GraphQL API.",
         api: `http://${HOST}:${PORT}${server.graphqlPath}`,
         credits: [
             {
