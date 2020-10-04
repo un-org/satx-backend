@@ -1,7 +1,7 @@
 {
-    "name": "satelleyes-backend",
+    "name": "satx-backend",
     "version": "1.0.0",
-    "description": "Satelleyes Backend",
+    "description": "satx Backend",
     "main": "server.js",
     "type": "module",
     "scripts": {
@@ -10,14 +10,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/un-org/satelleyes-backend.git"
+        "url": "git+https://github.com/un-org/satx-backend.git"
     },
     "author": "Undefined Dev",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/un-org/satelleyes-backend/issues"
+        "url": "https://github.com/un-org/satx-backend/issues"
     },
-    "homepage": "https://github.com/un-org/satelleyes-backend#readme",
+    "homepage": "https://github.com/un-org/satx-backend#readme",
     "dependencies": {
         "apollo-server-express": "^2.18.1",
         "bcrypt": "^5.0.0",
