@@ -1,25 +1,30 @@
-import mongoose from "mongoose";
+class Satellite {
+    category;
+    satname;
+    satid;
+    launchDate;
+    source;
+    launchSite;
 
-const requiredString = {
-    type: String,
-    required: true,
-};
-
-const satSchema = new mongoose.Schema(
-    {
-        category: requiredString,
-        satname: requiredString,
-        satid: {
-            type: Number,
-            required: true,
-        },
-        launchDate: requiredString,
-        source: requiredString,
-        launchSite: requiredString,
-    },
-    {
-        timestamps: true,
+    constructor({ category, satname, satid, launchDate, source, launchSite }) {
+        this.category = category;
+        this.satname = satname;
+        this.satid = satid;
+        this.launchDate = launchDate;
+        this.source = source;
+        this.launchSite = launchSite;
     }
-);
 
-export default mongoose.model("Sat", satSchema);
+    printSatInfo() {
+        console.log(
+            `Category ${this.category}`,
+            `Name ${this.satname}`,
+            `ID ${this.satid}`,
+            `Launch Date ${this.launchDate}`,
+            `Source ${this.source}`,
+            `Launch Site ${this.launchSite}`
+        );
+    }
+}
+
+export default Satellite;
